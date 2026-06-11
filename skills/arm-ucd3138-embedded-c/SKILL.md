@@ -1,6 +1,6 @@
 ---
 name: arm-ucd3138-embedded-c
-description: Use this skill when the user works with UCD3138 microcontroller (Texas Instruments), bare-metal C firmware, using cyclone*.h header files. Triggers: UCD3138, UCD3138A, cyclone, TI Power Controller, PMBus, Fusion, digital power, PFC, LLC, resonant converter.
+description: Use this skill when the user works with UCD3138 microcontroller (Texas Instruments), bare-metal C firmware, using cyclone*.h header files. Triggers: UCD3138, UCD3138064A, cyclone, TI Power Controller, PMBus, Fusion, digital power, PFC, LLC, resonant converter.
 version: 1.0.0
 ---
 

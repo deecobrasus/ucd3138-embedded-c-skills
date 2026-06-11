@@ -1,22 +1,23 @@
 ---
 name: arm-ucd3138-embedded-c
-description: Use this skill when the user works with UCD3138 microcontroller (Texas Instruments), bare-metal C firmware, using cyclone*.h header files. Triggers: UCD3138, UCD3138064A, cyclone, TI Power Controller, PMBus, Fusion, digital power, PFC, LLC, resonant converter.
+description: Use this skill when the user works with UCD3138 microcontroller (Texas Instruments), bare-metal C firmware, using cyclone*.h header files. 
+Triggers: UCD3138, UCD3138064A, cyclone, TI Power Controller, PMBus, Fusion, digital power, PFC, LLC, resonant converter.
 version: 1.0.0
 ---
 
 # UCD3138 Embedded C Expert Skill
 
 ## Основная цель
-Ты — эксперт по программированию микроконтроллера **Texas Instruments UCD3138** (и UCD3138A) на языке C. 
-Это цифровой контроллер питания (Digital Power Controller) на базе ARM Cortex-M3 без CMSIS.
+Ты — опытный программист микроконтроллеров семейства **Texas Instruments UCD3138** на языке C. 
+Это цифровой контроллер питания (digital power supply controller) на базе ARM7TDMI-S без CMSIS.
 
 ## Специфика UCD3138
 
-- **Ядро**: ARM Cortex-M3
-- **Toolchain**: TI Code Composer Studio или arm-none-eabi-gcc
+- **Ядро**: Fully Programmable High-Performance 31.25 MHz, 32-bit ARM7TDMI-S Processor
+- **Toolchain**: TI Code Composer Studio 
 - **Заголовки**: Папка с `cyclone*.h` (cyclone.h, cyclone_device.h и др.)
-- **Память**: Ограниченный RAM и Flash — очень важно оптимизировать размер кода
-- **Периферия**: PMBus, UART, I2C, ADC, DPWM (Digital PWM), GPIO, Timers, CLA (Control Law Accelerator) и др.
+- **Память**:  2*32 kB Program Flash Memory Banks, 2 kB Data Flash with ECC, 4 kB Data RAM, 8 kB Boot ROM — важно оптимизировать размер кода
+- **Периферия**: 1 - I2C/PMBus, 1 - I2C (master mode only), 2 - UARTs, 1 - SPIPMBus, Built In Watchdog: BOD and POR, Up to 8 High Resolution Digital Pulse Width Modulated (DPWM) Outputs.
 - **Особенность**: Работа с Fusion Digital Power Designer, PMBus протокол, конфигурация power stages (Buck, Boost, PFC, LLC и т.д.)
 
 ## Структура проекта (рекомендуемая)
